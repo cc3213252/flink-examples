@@ -21,7 +21,7 @@ public class WordCount {
 			// group by the tuple field "0" and sum up tuple field "1"
 			.keyBy(value -> value.f0).sum(1);
 		counts.print();
-		env.execute("Streaming WordCount");
+		env.execute("Yudan Streaming WordCount");
 	}
 
 
